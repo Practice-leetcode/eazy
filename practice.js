@@ -177,14 +177,72 @@ Return k.
  * @return {number}
  */
 
-var removeElement = function (nums, val) {
-    let k = 0
-    for (let i = 0; i < nums.length; i++) {
-        if (nums[i] !== val) {
-            nums[k] = nums[i];
-            k++;
-        }
-    }
-    return k;
-};
+// var removeElement = function (nums, val) {
+//     let k = 0
+//     for (let i = 0; i < nums.length; i++) {
+//         if (nums[i] !== val) {
+//             nums[k] = nums[i];
+//             k++;
+//         }
+//     }
+//     return k;
+// };
 
+// 28. Find the Index of the First Occurrence in a String
+
+// Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+
+
+/*
+ * @param {string} haystack
+ * @param {string} needle
+ * @return {number}
+ */
+
+// let haystack = "sadbutsad", needle = "sad"
+// var strStr = function (haystack, needle) {
+
+// for (let i = 0; i < haystack.length - needle.length; i++) {
+//     if (haystack.substring(i, i + needle.length) === needle) {
+//         return i;
+//     }
+//     return -1
+// }
+
+////////////
+//  or:
+// return haystack.indexOf(needle);
+// };
+
+// console.log(strStr(haystack, needle));
+
+// 35. Search Insert Position:
+
+
+// Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
+//
+// You must write an algorithm with O(log n) runtime complexity.
+
+
+/*
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number}
+ */
+
+// let nums = [1, 3, 5, 6], target = 5
+
+// var searchInsert = function (nums, target) {
+//     let left = 0;
+//     let right = nums.length - 1;
+
+//     while (right >= left) {
+//         let mid = left + Math.floor((right - left) / 2);
+
+//         if (nums[mid] === target) return mid;
+//         else if (nums[mid] > target) right = mid - 1;
+//         else left = mid + 1;
+//     }
+
+//     return left;
+// };
